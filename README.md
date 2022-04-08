@@ -1,24 +1,25 @@
-# demo1
+# vue-dragline
+> 项目根据react-dragline 改写为vue。
 
-## Project setup
-```
-npm install
-```
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
 
-### Compiles and minifies for production
-```
-npm run build
-```
 
-### Lints and fixes files
+### Installation
+**npm**
 ```
-npm run lint
+npm install vue-dragline --save
+```
+**yarn**
+```
+yarn add install vue-dragline
+```
+### Example
+```js
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### Prop Types
+| Property | Type | Default | Description |
+
+
+### Contributing
+
