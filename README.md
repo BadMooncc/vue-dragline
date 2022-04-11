@@ -89,7 +89,7 @@ export default {
 ### Prop Types
 | Property | Type | Default | Description |
 | :-- | :-- | :-- | :-- |
-| id | string/numberz| - | 元素唯一值，必填 |     
+| id | string/number| - | 元素唯一值，必填 |     
 
 ### event事件
 > resize
