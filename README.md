@@ -48,13 +48,7 @@ yarn add install vue-dragline
   </draggable-container>
 </template>
 <script>
-// import draggableContainer from '../package/DraggableContainer';
-// import draggableChild from '../package/DraggableChild';
 export default {
-    // components: {
-    //     draggableContainer,
-    //     draggableChild
-    // },
     data() {
         return {
             initialChildren: [
