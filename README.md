@@ -48,6 +48,7 @@ yarn add install vue-dragline
   </draggable-container>
 </template>
 <script>
+import 'vue-dragline/lib/vue-dragline.css';
 export default {
     data() {
         return {
