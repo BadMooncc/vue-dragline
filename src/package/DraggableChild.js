@@ -1,5 +1,6 @@
 // import { createCoreData } from '../utils/utils'
 export default {
+    name: 'draggable-child',
     props: {
         active: {
             type: Boolean,

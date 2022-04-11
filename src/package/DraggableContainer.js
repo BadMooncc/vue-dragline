@@ -1,5 +1,6 @@
 import { unique, checkArrayWithPush, getMaxDistance } from '../utils/utils';
 export default {
+    name: 'draggable-container',
     props: {
         Container: 'div',
         styles: Object,
@@ -294,7 +295,7 @@ export default {
     },
     render(h) {
         return (
-            <div style={this.styles} ref="container">
+            <div class="dragable-container" style={this.styles} ref="container">
                 {this._renderChildren()}
                 {this._renderGuideLine()}
             </div>

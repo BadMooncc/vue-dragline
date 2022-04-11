@@ -1,6 +1,6 @@
 <template>
-  <draggableContainer class="home">
-    <draggableChild
+  <draggable-container>
+    <draggable-child
       v-for="item in initialChildren"
       :key="item.id"
       :id="item.id"
@@ -21,17 +21,17 @@
         <span>size: {{ item.size }}</span>
         <span>drag me</span>
       </div>
-    </draggableChild>
-  </draggableContainer>
+    </draggable-child>
+  </draggable-container>
 </template>
 <script>
-import draggableContainer from '../package/DraggableContainer';
-import draggableChild from '../package/DraggableChild';
+// import draggableContainer from '../package/DraggableContainer';
+// import draggableChild from '../package/DraggableChild';
 export default {
-    components: {
-        draggableContainer,
-        draggableChild
-    },
+    // components: {
+    //     draggableContainer,
+    //     draggableChild
+    // },
     data() {
         return {
             initialChildren: [
@@ -49,28 +49,3 @@ export default {
     }
 };
 </script>
-<style>
-.draggable {
-  box-sizing: border-box;
-}
-.home .vdr {
-  border: none;
-}
-.home {
-  height: 100vh;
-  width: 100%;
-  cursor: move;
-  border: 1px solid red;
-  position: relative;
-}
-.home .item {
-  width: 100%;
-  height: 100%;
-}
-.home .active {
-  border: 1px dashed #999;
-}
-.active-item {
-  opacity: 0.5;
-}
-</style>

@@ -1,6 +1,6 @@
 {
   "name": "vue-dragline",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "main": "lib/vue-dragline.umd.min.js",
   "author": "zhaodh",
   "license": "MIT",
@@ -11,14 +11,11 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
-    "axios": "^0.24.0",
-    "core-js": "^3.6.5",
-    "element-ui": "^2.15.6",
-    "vue": "^2.6.11",
-    "vue-draggable-resizable": "^2.3.0",
-    "vue-router": "^3.5.3"
+    "vue-draggable-resizable": "^2.3.0"
   },
   "devDependencies": {
+    "core-js": "^3.6.5",
+    "vue": "^2.6.11",
     "@vue/babel-plugin-jsx": "^1.1.1",
     "@vue/cli-plugin-babel": "~4.5.0",
     "@vue/cli-plugin-eslint": "^4.1.1",
