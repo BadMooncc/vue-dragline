@@ -6,6 +6,10 @@
       :id="item.id"
       :width="item.width"
       :height="item.height"
+      @stop="handleStop"
+      @start="handleStart"
+      @drag="handleDrag"
+      @resize="handleResize"
       :default-position="item.position">
       <div
         class="item"
@@ -43,6 +47,18 @@ export default {
         };
     },
     methods: {
+        handleResize(e) {
+            console.log(e, 'handleResize');
+        },
+        handleDrag(e) {
+            console.log(e);
+        },
+        handleStop(e) {
+            console.log(e, 'handleStop');
+        },
+        handleStart() {
+            console.log('开始');
+        },
         handleClick() {
             alert(1);
         }

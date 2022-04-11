@@ -58,7 +58,7 @@ export default {
         this.y = this.defaultPosition.y;
     },
     methods: {
-        onResize(left, top, width, height) {
+        onResize(left, top, width, height, children) {
             this.w = width;
             this.h = height;
             this.$emit('resize',{ x: left, y: top, width, height });
@@ -70,18 +70,19 @@ export default {
         },
         handleStart() {
             this._start();
-            this.$emit('start');
+            this.$emit('start', { x: this.x, y: this.y, width: this.w, height: this.h });
         },
         handleDrag(xx, yy) {
             const { x, y } = this._drag(xx, yy);
             this.x = x;
             this.y = y;
             this.$refs[`drag${this.id}`].style.transform = `translate(${this.x}px, ${this.y}px)`;
-            this.$emit('drag', {x: this.x, y: this.y });
+            this.$emit('drag',{ x: this.x, y: this.y, width: this.w, height: this.h });
         }
     },
     render() {
         const children = this.$slots.default[0];
+        // console.log(children);
         return (
             <vue-draggable
                 onActivated={this.handleStart}

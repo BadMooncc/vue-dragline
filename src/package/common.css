@@ -21,3 +21,54 @@
 .active-item {
   opacity: 0.5;
 }
+.draggable .handle {
+  width: 7px;
+  height: 7px;
+  background: #000;
+  border: 1px solid #333;
+  border-radius: 50%;
+}
+.draggable .handle-tl {
+top: -5px;
+left: -5px;
+cursor: nw-resize;
+}
+.draggable .handle-tm {
+top: -5px;
+left: 50%;
+margin-left: -5px;
+cursor: n-resize;
+}
+.draggable .handle-tr {
+top: -5px;
+right: -5px;
+cursor: ne-resize;
+}
+.draggable .handle-ml, .handle-mr {
+  top: 50%;
+  margin-top: -5px;
+}
+.draggable .handle-ml {
+  left: -5px;
+  cursor: w-resize;
+}
+.draggable .handle-bl {
+  bottom: -5px;
+  left: -5px;
+  cursor: sw-resize;
+}
+.draggable .handle-mr {
+  right: -5px;
+  cursor: e-resize;
+}
+.draggable .handle-bm {
+  bottom: -5px;
+  left: 50%;
+  margin-left: -5px;
+  cursor: s-resize;
+}
+.draggable .handle-br {
+bottom: -5px;
+right: -5px;
+cursor: se-resize;
+}

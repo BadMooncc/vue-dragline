@@ -1,6 +1,6 @@
 {
   "name": "vue-dragline",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "lib/vue-dragline.umd.min.js",
   "author": "zhaodh",
   "license": "MIT",
