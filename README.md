@@ -48,6 +48,7 @@ yarn add install vue-dragline
   </draggable-container>
 </template>
 <script>
+import 'vue-dragline/lib/vue-dragline.css';
 export default {
     data() {
         return {
@@ -88,13 +89,13 @@ export default {
 ### event事件
 > resize
 > 改变元素大小时触发，返回元素的当前坐标x,y和宽高wdth,height
-
+>
 > stop
 > 元素停止拖拽时触发，返回元素的当前坐标x,y和宽高wdth,height
-
+>
 > drag
 > 元素拖拽时触发，返回元素的当前坐标x,y和宽高wdth,height
-
+>
 > start
 > 元素被选中时触发，返回元素的当前坐标x,y和宽高wdth,height
 
