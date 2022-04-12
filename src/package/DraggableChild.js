@@ -18,18 +18,18 @@ export default {
             type: Number,
             default: 0
         },
-        onStart: {
-            type: Function,
-            default: () => {}
-        },
-        onDrag: {
-            type: Function,
-            default: () => {}
-        },
-        onStop: {
-            type: Function,
-            default: () => {}
-        },
+        // onStart: {
+        //     type: Function,
+        //     default: () => {}
+        // },
+        // onDrag: {
+        //     type: Function,
+        //     default: () => {}
+        // },
+        // onStop: {
+        //     type: Function,
+        //     default: () => {}
+        // },
         _start: {
             type: Function,
             default: () => {}
@@ -49,8 +49,8 @@ export default {
             y: 0,
             w: this.width,
             h: this.height,
-            lastY: 0,
-            lastX: 0
+            // lastY: 0,
+            // lastX: 0
         };
     },
     mounted() {
@@ -61,6 +61,7 @@ export default {
         onResize(left, top, width, height, children) {
             this.w = width;
             this.h = height;
+            this._start();
             this.$emit('resize',{ x: left, y: top, width, height });
         },
         handleStop() {
